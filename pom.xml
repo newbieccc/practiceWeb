@@ -7,11 +7,24 @@
     <groupId>org.example</groupId>
     <artifactId>practiceWeb</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>practiceWeb</name>
+    <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <!-- https://mvnrepository.com/ -->
+    <!-- hpom.xml 파일에 의존성을 추가 (서블릿 스펙 4.0.1) -->
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>
