@@ -6,6 +6,13 @@
     <base href="/">
 </head>
 <body>
-    Hello WebApp
+<h2>Hello WebApp</h2>
+<form action="/insert" method="post">
+    <div>
+        <input type="text" id="title" name="title">
+        <input type="text" id="textline" name="textline">
+        <button type="submit">등록</button>
+    </div>
+</form>
 </body>
 </html>
