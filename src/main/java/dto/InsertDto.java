@@ -8,5 +8,10 @@ import lombok.Setter;
 public class InsertDto {
 
     private String title;
-    private String textline;
+    private String textLine;
+
+    public InsertDto(String title, String textLine) {
+        this.title = title;
+        this.textLine = textLine;
+    }
 }

@@ -10,7 +10,7 @@
 <form action="/insert" method="post">
     <div>
         <input type="text" id="title" name="title">
-        <input type="text" id="textline" name="textline">
+        <input type="text" id="textLine" name="textLine">
         <button type="submit">등록</button>
     </div>
 </form>

@@ -1,5 +1,6 @@
 package controller;
 
+import dao.InsertDao;
 import dto.InsertDto;
 
 import javax.servlet.*;
@@ -15,8 +16,15 @@ public class InsertController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        InsertDto insertDto = new InsertDto();
+        String title = request.getParameter("title");
+        String textLine = request.getParameter("textLine");
+
         System.out.println(request.getParameter("title"));
-        System.out.println(request.getParameter("textline"));
+        System.out.println(request.getParameter("textLine"));
+
+        InsertDto insertDto = new InsertDto(title, textLine);
+        InsertDao insertDao = new InsertDao();
+        insertDao.insert(insertDto);
+
     }
 }
